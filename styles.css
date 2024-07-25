@@ -15,7 +15,7 @@ body {
     background: url('https://i.pinimg.com/564x/ca/aa/ec/caaaecae7103fbe9a5be5f2eb7bd7195.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    overflow: hidden;
+    overflow: auto; /* Changed from hidden to auto */
 }
 .overlay {
     position: absolute;
@@ -31,6 +31,12 @@ header {
 }
 main {
     margin: 20px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 90%; /* Adjusted for better visibility */
+    max-width: 600px; /* Maximum width for better appearance */
+    overflow: auto;
 }
 section {
     margin-bottom: 20px;
@@ -40,6 +46,10 @@ section {
 }
 ul {
     list-style: none;
+    padding-left: 0;
+}
+li {
+    margin: 10px 0;
 }
 button {
     background-color: #4CAF50;
@@ -53,13 +63,16 @@ button {
 button:hover {
     background-color: #45a049;
 }
-.payment img {
-    width: 200px;
-    height: auto;
-}
 footer {
     padding: 10px;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     text-align: center;
+}
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
 }
